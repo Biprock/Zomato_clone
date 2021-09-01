@@ -302,11 +302,21 @@ section.options div.container div ul li{
 
 
 /* footer section */
+
+footer.foot div.container{
+    background-color: #f8f8f8;
+    margin: 0px auto;
+    padding: 100px;
+}
   
-footer{
-    background-color: #f8f8f8
+footer.foot div.container section.logo img{
+    height: 28px;
+    
 }
 
-footer.foot div.container div img{
-    background-color: #f8f8f8;
+
+footer.foot div.container div.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
