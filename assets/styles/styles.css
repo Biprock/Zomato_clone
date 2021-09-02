@@ -286,13 +286,16 @@ section.options div.container div{
 
 section.options div.container div ul{
     margin-top: 20px;
-    padding: 20px;
+    padding: 5px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
 
 section.options div.container div ul li{
+    padding: 6px 25px;
+    padding-left: 0;
     margin: 3px 10px;
     color: grey;
     font-size: 1.1rem;
@@ -303,74 +306,103 @@ section.options div.container div ul li{
 
 /* footer section */
 
-footer.foot div.container div{
-    margin: 2rem;
-}
-
-footer.foot div.container{
+footer {
     background-color: #f8f8f8;
-    max-width: 110rem;
-    padding: 4.8rem 2.4rem 2.2rem;
-    position: relative;
-}
+    height: 50vh;
 
-footer.foot div.container section.logo{
+}
+footer div.container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    padding: 45px 0;
+}
+footer div.footer-head {
+    height: 40px;
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin-bottom: 4rem;
-}
-  
-footer.foot div.container section.logo img{
-    height: 28px;
-    margin: 2.3rem;
-    
-}
-
-
-footer.foot div.container div.country{
-   display: flex;
-   flex-direction: row;
-}
-
-footer.foot div.container div.about{
-    width: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
 
 }
-
-footer.foot div.container div.about h6{
+footer div.container div.links ul li {
+    list-style: none;
+    padding: 4px 0;
     font-size: 1rem;
+    color: rgb(129, 127, 127);
+}
+
+
+
+footer div.container img {
+    width: 100%;
+    height: 30px;
+}
+footer div.container div.nation {
+    display: flex;
+    text-align: center;
+    width: 220px;
+    justify-content: space-between;
+}
+footer div.container div.nation img{
+    width: 14px;
+    height: 14px;
     letter-spacing: 0.2rem;
+}
+footer div.container div.nation .country,
+footer div.container div.nation .language {
+    width: 100px;
+    border: 1px solid #363636;
+    border-radius: 6px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div.container div.nation select{
+    background-color: #f8f8f8;
+    font-size: 0.9rem;
+}
+
+
+
+footer div.container .links {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-content: space-between;
+    margin-right: 80px;
+
+}
+footer div.container .links h4 {
+    
     font-weight: bold;
-    margin: 0px 0px 1.2rem;
-    display: block;
-}
-
-footer.foot div.container div.about ul{
-    list-style-type: none;
-}
-
-footer.foot div.container div.about div.sociallinks{
-    font-size: 1.4rem;
+    font-size: 0.8rem;
     letter-spacing: 0.2rem;
-    
-    
+    color: #000;
+    margin-bottom: 10px;
 }
 
-footer.foot div.container div.about img{
-    max-width: 130px;
-    margin: 5px 5px;
+footer div.container div.links div.social-links{
+    letter-spacing: 0.2rem;
+    font-weight:bold;
+    font-size: 1.5rem;
+}
+
+footer div.container .links .apploc {
     display: flex;
     flex-direction: column;
 }
+footer div.container .links .apploc img{
+    width: 90%;
+    height: 2.5rem;
+    color: #828282;
+    margin: 5px 5px;
 
-hr{
+}
+
+
+ hr{
     margin: 5rem;
     border-width: 1px 0px 0px;
     border-top-style: solid;
@@ -378,13 +410,12 @@ hr{
 }
 
 
-p{
+ p{
     font-size: 1rem;
     color: rgb(79,79,79);
     line-height: 1.7rem;
+    padding: 10px 10px;
     margin: 2rem;
     margin-top: 2.3rem;
 }
-
-
 /* marks the end of project */
